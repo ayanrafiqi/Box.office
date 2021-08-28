@@ -6,7 +6,7 @@ const MainPageLayout = ({ children }) => {
   return (
     <div>
       <Title
-        title="Box Office"
+        title="Ayan's Box Office App"
         subtitle=" Are you looking for a movie or an Actor?"
       />
 
