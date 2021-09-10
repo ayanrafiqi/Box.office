@@ -16,7 +16,7 @@ const Starred = () => {
       const promises = starred.map(showId => apiGet(`/shows/${showId}`));
 
       Promise.all(promises)
-        // .then(apiData => apiData.map(show => ({ show })))
+        .then(apiData => apiData.map(show => ({ show })))
         .then(results => {
           setShows(results);
           setIsLoading(false);
