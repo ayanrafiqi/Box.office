@@ -12,7 +12,8 @@ const ShowGrid = ({ data }) => {
     <FlexGrid>
       {data.map(({ show }) => {
         const isStarred = starredShows.includes(show.id);
-
+        //it is used to check whether the starredshows (state) includes
+        // the ids  of searched show
         const onStarClick = () => {
           if (isStarred) {
             dispatchStarred({ type: 'REMOVE', showId: show.id });
